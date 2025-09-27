@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Pokemon Survey</h1>
+    <p id="description">Cool survey about pokemon!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">
+          Name:
+          <input required id="name" type="text" placeholder="Ash Ketchum" />
+        </label>
+        <label for="email" id="email-label">
+          Email:
+          <input
+            required
+            id="email"
+            type="email"
+            placeholder="example@email.com" />
+        </label>
+        <label for="number" id="number-label">
+          Age:
+          <input
+            id="number"
+            type="number"
+            min="13"
+            max="120"
+            placeholder="Input age here" />
+        </label>
+        <label></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">
+          Favourite generation:
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Generation 1</option>
+            <option value="2">Generation 2</option>
+            <option value="3">Generation 3</option>
+            <option value="4">Generation 4</option>
+            <option value="5">Generation 5</option>
+            <option value="6">Generation 6</option>
+            <option value="7">Generation 7</option>
+            <option value="8">Generation 8</option>
+            <option value="9">Generation 9</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Best Starter Type</legend>
+        <label for="water-starter">
+          <input
+            id="water-starter"
+            checked
+            name="best-type"
+            type="radio"
+            value="Water" />
+          Water
+        </label>
+        <label for="fire-starter">
+          <input id="fire-starter" name="best-type" type="radio" value="Fire" />
+          Fire
+        </label>
+        <label for="grass-starter">
+          <input
+            id="grass-starter"
+            name="best-type"
+            type="radio"
+            value="Grass" />
+          Grass
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Favourite Type/s</legend>
+
+        <label for="normal-type">
+          <input id="normal-type" type="checkbox" name="type" value="Normal" />
+          Normal
+        </label>
+        <br />
+
+        <label for="fire-type">
+          <input id="fire-type" type="checkbox" name="type" value="Fire" />
+          Fire
+        </label>
+        <br />
+
+        <label for="water-type">
+          <input id="water-type" type="checkbox" name="type" value="Water" />
+          Water
+        </label>
+        <br />
+
+        <label for="electric-type">
+          <input
+            id="electric-type"
+            type="checkbox"
+            name="type"
+            value="Electric" />
+          Electric
+        </label>
+        <br />
+
+        <label for="grass-type">
+          <input id="grass-type" type="checkbox" name="type" value="Grass" />
+          Grass
+        </label>
+        <br />
+
+        <label for="ice-type">
+          <input id="ice-type" type="checkbox" name="type" value="Ice" />
+          Ice
+        </label>
+        <br />
+
+        <label for="fighting-type">
+          <input
+            id="fighting-type"
+            type="checkbox"
+            name="type"
+            value="Fighting" />
+          Fighting
+        </label>
+        <br />
+
+        <label for="poison-type">
+          <input id="poison-type" type="checkbox" name="type" value="Poison" />
+          Poison
+        </label>
+        <br />
+
+        <label for="ground-type">
+          <input id="ground-type" type="checkbox" name="type" value="Ground" />
+          Ground
+        </label>
+        <br />
+
+        <label for="flying-type">
+          <input id="flying-type" type="checkbox" name="type" value="Flying" />
+          Flying
+        </label>
+        <br />
+
+        <label for="psychic-type">
+          <input
+            id="psychic-type"
+            type="checkbox"
+            name="type"
+            value="Psychic" />
+          Psychic
+        </label>
+        <br />
+
+        <label for="bug-type">
+          <input id="bug-type" type="checkbox" name="type" value="Bug" />
+          Bug
+        </label>
+        <br />
+
+        <label for="rock-type">
+          <input id="rock-type" type="checkbox" name="type" value="Rock" />
+          Rock
+        </label>
+        <br />
+
+        <label for="ghost-type">
+          <input id="ghost-type" type="checkbox" name="type" value="Ghost" />
+          Ghost
+        </label>
+        <br />
+
+        <label for="dragon-type">
+          <input id="dragon-type" type="checkbox" name="type" value="Dragon" />
+          Dragon
+        </label>
+        <br />
+
+        <label for="dark-type">
+          <input id="dark-type" type="checkbox" name="type" value="Dark" />
+          Dark
+        </label>
+        <br />
+
+        <label for="steel-type">
+          <input id="steel-type" type="checkbox" name="type" value="Steel" />
+          Steel
+        </label>
+        <br />
+
+        <label for="fairy-type">
+          <input id="fairy-type" type="checkbox" name="type" value="Fairy" />
+          Fairy
+        </label>
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <label for="pokemon-origin">
+          How'd you first get into pokemon?
+          <textarea id="pokemon-origin"></textarea>
+        </label>
+      </fieldset>
+      <button id="submit" value="Submit">Submit</button>
+    </form>
+  </body>
+</html>
