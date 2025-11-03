@@ -1,9 +1,87 @@
-#image {
+/* Reset */
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f2f2f2;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Main container */
+  #main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Title */
+  #title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff4e4e;
+  }
+  
+  /* Image container */
+  #img-div {
+    margin: 20px 0;
+  }
+  
+  #image {
     max-width: 100%;
     height: auto;
+    display: block;
     margin: 0 auto;
-}
-
-img {
-    display: block;    
-}
+    border-radius: 8px;
+  }
+  
+  #img-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #ccc;
+  }
+  
+  /* Tribute info */
+  #tribute-info {
+    text-align: left;
+    margin: 30px auto;
+  }
+  
+  #tribute-info ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #tribute-info li {
+    margin: 8px 0;
+  }
+  
+  blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    color: #ffdf91;
+  }
+  
+  /* Link styling */
+  #tribute-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ff4e4e;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #tribute-link:hover {
+    text-decoration: underline;
+  }
+  
