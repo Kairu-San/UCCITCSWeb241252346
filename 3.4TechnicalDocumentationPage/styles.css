@@ -1,6 +1,129 @@
-@media (max-width: 768px) {
-    nav {
-        align-items: flex-start;
-    }
+/* Presets */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+:root {
+  --font-main: "Open Sans", Arial, sans-serif;
+  --color-bg: #f1f0ea;
+  --color-text: #2d232e;
+  --color-text-faded: #2d232ec2;
+  --color-bg-alt: #2d232e;
+  --color-text-alt: #f1f0ea;
+  --color-text-alt-faded: #f1f0eaad;
+  --spacing: 1rem;
+  font-size: 16px;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  padding: 0px;
+  overflow-y: auto;
+  background-color: var(--color-bg-alt);
+}
+
+#navbar header {
+  color: var(--color-text-alt);
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 10px 10px 0px 10px;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: var(--color-text-alt-faded);
+  border-bottom: 1.5px solid;
+  padding: 10px;
+  text-align: left;
+}
+
+.nav-link:first-of-type {
+  border-top: 1.5px solid;
+}
+
+/* Main Body */
+#main-doc {
+  margin-left: 220px;
+}
+
+header {
+  color: var(--color-text);
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.main-section {
+  padding: 10px 20px;
+}
+.main-section ul {
+  padding: 0px 20px;
+}
+
+.p-section {
+  margin-bottom: 10px;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text-faded);
+}
+
+.bg-square {
+  background-color: #dbdad56b;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* Code */
+code {
+  color: var(--color-text-faded);
+  padding: 0 5px;
+  background-color: #dbdad3dc;
+  border-radius: 3px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--color-bg-alt);
+    padding: 10px 0;
+  }
+
+  #navbar header {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .nav-link {
+    border: none;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  .nav-link:first-of-type {
+    border: none;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
 }
