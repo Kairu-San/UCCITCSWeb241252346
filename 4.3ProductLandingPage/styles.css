@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-main: Verdana, sans-serif;
+    --color-primary: ;
+    --color-secondary: ;
+    --color-bg: #f1f0ea;
+    --color-text: #2d232e;
+    --color-text-faded: #2d232ec2;
+    --color-bg-alt: #2d232e;
+    --color-text-alt: #f1f0ea;
+    --color-text-alt-faded: #f1f0eaad;
+    --spacing: 1rem;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-main);
+}
+
+#nav-bar {
+    position: fixed;
+    display: flex;
+    height: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+body {
+    padding-top: 100px;
+}
+
+#About_Us {
+}
+
+
+
+@media (max-width: 768px) {
+
+}
