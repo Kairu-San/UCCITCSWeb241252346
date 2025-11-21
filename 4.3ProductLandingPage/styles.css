@@ -1,45 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --font-main: Verdana, sans-serif;
-    --color-primary: ;
-    --color-secondary: ;
-    --color-bg: #f1f0ea;
-    --color-text: #2d232e;
-    --color-text-faded: #2d232ec2;
-    --color-bg-alt: #2d232e;
-    --color-text-alt: #f1f0ea;
-    --color-text-alt-faded: #f1f0eaad;
-    --spacing: 1rem;
-    font-size: 16px;
+  font-size: 16px;
+  --font-main: "Raleway", sans-serif;
+  --color-primary: #9bbeff;
+  --color-bg: #f9f9f9;
+  --color-text: #2d232e;
+  --spacing: 1rem;
+  --font-size-small: 0.875rem; /* ~14px */
+  --font-size-p: 1rem; /* 16px */
+  --font-size-h6: 1.125rem; /* ~18px */
+  --font-size-h5: 1.25rem; /* ~20px */
+  --font-size-h4: 1.5rem; /* 24px */
+  --font-size-h3: 1.75rem; /* 28px */
+  --font-size-h2: 2rem; /* 32px */
+  --font-size-h1: 2.5rem; /* 40px */
 }
 
 body {
-    font-family: var(--font-main);
+  font-family: var(--font-main);
+  background-color: #f9f9f9;
+  padding-top: 100px;
 }
+
+/* NAVBAR */
 
 #nav-bar {
-    position: fixed;
-    display: flex;
-    height: 60px;
-    top: 0;
-    left: 0;
-    width: 100%;
+  position: fixed;
+  display: flex;
+  height: 70px;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  font-size: var(--font-size-h6);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  padding-right: 2rem;
+  z-index: 100;
 }
 
-body {
-    padding-top: 100px;
+#nav-bar img {
+  width: 70px;
+  height: 70px;
+  transition: scale 0.3s ease, transform 0.2s ease;
 }
+
+#nav-bar img:hover {
+  transform: scale(1.1);
+}
+
+#link-container {
+  display: flex;
+  gap: 2rem;
+}
+
+#link-container a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 550;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease, transform 0.3s ease;
+}
+
+#link-container a:hover {
+  border-bottom: 2px solid var(--color-text);
+}
+
+/* HERO */
+
+#Home {
+  position: relative; 
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+#hero-image {
+  position: absolute;  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center;
+  z-index: 0;        
+  
+}
+
+#hero-text {
+  position: relative;
+  z-index: 1;           
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;         /* or whatever contrasts with image */
+  text-align: center;
+  padding: 0 1rem;      /* optional padding for smaller screens */
+}
+
+
+
+
+
 
 #About_Us {
 }
 
-
-
 @media (max-width: 768px) {
-
 }
