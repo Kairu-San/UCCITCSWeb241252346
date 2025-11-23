@@ -4,12 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   font-size: 16px;
   --font-main: "Raleway", sans-serif;
   --color-primary: #9bbeff;
   --color-bg: #f9f9f9;
-  --color-text: #2d232e;
+  --color-text: #080708;
   --spacing: 1rem;
   --font-size-small: calc(0.5rem + 0.5vw);
   /* small text */
@@ -146,25 +150,25 @@ body {
   justify-content: center;
   align-items: center;
   padding: 4rem 10rem;
-  gap: 3rem;
 }
 
 #about-text {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  color: var(--color-text);
 }
 
 #about-text>p {
   font-size: var(--font-size-h3);
   text-align: left;
-  width: 90%;
+  width: 80%;
 }
 
 #About_Us video {
   width: 20vw;
-  border-radius: 5%;
-  border: 3px solid var(--color-text);
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* HEADER TEXT */
@@ -172,28 +176,183 @@ body {
   margin-top: 5vh;
   font-size: var(--font-size-h1);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  color: var(--color-text);
 }
 
 .header-text::after {
   content: "";
   display: block;
-  width: 50%;                
-  height: 4px;           
+  width: 50%;
+  height: 4px;
   background-color: var(--color-text);
-  margin: 0.5rem auto 0;  
-  BOX-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);   
+  margin: 0.5rem auto 0;
+  BOX-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* OUR PRODUCTS */
 
+#Products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 10rem;
+  gap: 3rem;
+  background-color: var(--color-bg);
+}
 
+#Products img {
+  width: 100px;
+}
 
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
 
+.product-item {
+  background: var(--color-primary);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  BOX-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: scale 0.3s ease, transform 0.2s ease;
+}
 
+.product-item:hover {
+  transform: scale(1.02);
+}
 
+.product-item:active {
+  transform: scale(1.0);
+}
 
+.product-item h3 {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+  padding: 1rem 1rem;
+}
 
+#dishwashing {
+  width: 185px !important;
+}
 
+#laundry {
+  width: 150px !important;
+}
+
+/* CUSTOMERS */
+
+#Customers {
+  background: var(--color-primary);
+}
+
+.customer-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+#Customers img {
+  width: 420px;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 3rem 0;
+}
+
+.slides {
+  display: flex;
+  gap: 2rem;
+  animation: slide 30s linear infinite;
+}
+
+.card {
+  min-width: 450px;
+  background: white;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* CONTACT */
+
+#Contact {
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--font-size-h5);
+  gap: 3rem;
+  padding: 1rem 0;
+}
+
+#Contact img {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background: white;
+}
+
+#message {
+  background-color: var(--color-primary);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: var(--font-size-h3);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  transition: scale 0.3s ease, transform 0.2s ease;
+}
+
+#message:hover {
+  transform: scale(1.04);
+}
+
+#message:active {
+  transform: scale(1.0);
+}
+
+#Contact a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2vh;
+}
 
 
 

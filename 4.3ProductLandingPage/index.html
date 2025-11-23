@@ -10,7 +10,6 @@
     href="https://fonts.googleapis.com/css2?family=Bangers&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="script" href="script.js">
   <link rel="icon" type="image/png" href="./images/logo.png" />
   <title>Sabon Fabrika</title>
 </head>
@@ -63,61 +62,65 @@
     <h2 class="header-text">OUR PRODUCTS</h2>
     <div class="product-grid">
       <div class="product-item">
-        <img src="./images/product1.jpg" alt="Product 1" />
+        <img src="./images/dishwashing.png" alt="Product 1" id="dishwashing" />
         <h3>Dishwashing Soap</h3>
       </div>
       <div class="product-item">
-        <img src="./images/product2.jpg" alt="Product 2" />
+        <img src="./images/handsoap.png" alt="Product 2" />
         <h3>Hand Soap</h3>
       </div>
       <div class="product-item">
-        <img src="./images/product3.jpg" alt="Product 3" />
+        <img src="./images/fabcon.png" alt="Product 3" />
         <h3>Fabcon</h3>
       </div>
       <div class="product-item">
-        <img src="./images/product4.jpg" alt="Product 4" />
+        <img src="./images/laundeter.png" alt="Product 4" />
         <h3>Laundry Detergent</h3>
       </div>
       <div class="product-item">
-        <img src="./images/product5.jpg" alt="Product 5" />
+        <img src="./images/launpowder.png" alt="Product 5" id="laundry" />
         <h3>Laundry Powder</h3>
       </div>
       <div class="product-item">
-        <img src="./images/product6.jpg" alt="Product 6" />
+        <img src="./images/bleach.png" alt="Product 6" />
         <h3>Liquid Bleach</h3>
       </div>
     </div>
   </section>
 
-  <section id="Customers" class="main-section">
+<section id="Customers" class="main-section">
+  <div class="customer-wrap">
     <h2 class="header-text">BRANCHES ACROSS THE PHILIPPINES</h2>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="./images/customer1.jpg" alt="Customer 1" />
-        <h3>San Carlos, Dagupan</h3>
-      </div>
-      <div class="gallery-item">
-        <img src="./images/customer1.jpg" alt="Customer 1" />
-        <h3>San Carlos, Dagupan</h3>
-      </div>
-      <div class="gallery-item">
-        <img src="./images/customer1.jpg" alt="Customer 1" />
-        <h3>San Carlos, Dagupan</h3>
-      </div>
-      <div class="gallery-item">
-        <img src="./images/customer1.jpg" alt="Customer 1" />
-        <h3>San Carlos, Dagupan</h3>
+    <div class="slider">
+      <div class="slides">
+        <div class="card"><img src="./images/customers/bauang-launion.jpg"><p>Bauang, La Union</p></div>
+        <div class="card"><img src="./images/customers/cabanatuancity-neuvaecija.jpg"><p>Cabanatuan City, Nueva Ecija</p></div>
+        <div class="card"><img src="./images/customers/dinalupihan-bataan.jpg"><p>Dinalupihan, Bataan</p></div>
+        <div class="card"><img src="./images/customers/mayantoc-tarlac.jpg"><p>Mayantoc, Tarlac</p></div>
+        <div class="card"><img src="./images/customers/bauang-launion.jpg"><p>Bauang, La Union</p></div>
+        <div class="card"><img src="./images/customers//pozorrubio-pangasinan.jpg"><p>Pozorrubio, Pangasinan</p></div>
+        <div class="card"><img src="./images/customers/sancarloscity-pangasinan.jpg"><p>San Carlos City, Pangasinan</p></div>
+        <div class="card"><img src="./images/customers/sanmanuel-pangasinan.jpg"><p>San Manuel, Pangasinan</p></div>
+        <div class="card"><img src="./images/customers/urbiztondo-pangasinan.jpg"><p>Urbiztondo, Pangasinan</p></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <section id="Contact" class="main-section">
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <label for="email">Sign up for our latest deals!</label>
-      <input placeholder="johndoe@example.com" type="email" name="email" id="email" required />
-      <input type="submit" id="submit" />
-    </form>
+    <h2 class="header-text">CONTACT US</h2>
+    <p>Reach out to us directly on our Facebook page to place your order.</p>
+    <img src="./images/transparent_logo.png" alt="logo" width="400px">
+    <a href="https://www.facebook.com/sabon.fabrika" target="_blank">
+      <h3 id="message">Message Us</h3>
+    </a>
+    <h4>09761349254 | 09761390681</h4>
   </section>
+  
+  <footer>
+    <p>© Sabon Fabrika 2024 All Rights Reserved.</p>
+  </footer>
 </body>
 
 </html>
